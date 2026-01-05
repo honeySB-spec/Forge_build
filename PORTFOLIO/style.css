@@ -1,0 +1,188 @@
+body {
+    font-family: sans-serif;
+    margin: auto;
+    padding: auto;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 20px;
+    min-height: 80px;
+    text-align: center;
+}
+
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav-links a {
+    margin: 0 20px;
+}
+
+
+h1,
+h2,
+h3 {
+    color: #333;
+}
+
+
+section {
+    padding: 25px;
+    margin-bottom: 20px;
+    background: #fff;
+}
+
+
+.btn {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.btn:hover {
+    background: #ce0000;
+}
+
+
+input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+/* read */
+.skills-grid,
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+
+.skill-category,
+.project-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    background: #f9f9f9;
+}
+
+
+.profile-img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+.main-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.main-text {
+    flex: 1;
+}
+
+
+.main-social {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+
+.main-social a {
+    color: #555;
+    transition: color 0.3s;
+}
+
+
+.main-social a:hover {
+    color: #333;
+}
+
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+
+.web3-card {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+
+    .main-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+
+    .main-social {
+        justify-content: center;
+    }
+
+
+    .profile-img {
+        height: 400px;
+        width: -webkit-fill-available;
+        margin-bottom: 20px;
+    }
+
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .web3-card {
+        flex-direction: column;
+    }
+}
